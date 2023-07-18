@@ -1,0 +1,275 @@
+body {
+  background: linear-gradient(50deg, #110e50, rgb(0, 6, 71));
+}
+.fixed {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  width: 800px;
+  height: 240px;
+  border-radius: 20px;
+  font-size: 40px;
+  color: white;
+
+  background-color: rgb(17, 16, 16);
+}
+.fixed2 {
+  position: fixed;
+  top: 270px;
+  left: 15px;
+  width: 800px;
+  height: 955px;
+  border-radius: 20px;
+  font-size: 40px;
+  color: white;
+  background-color: rgb(17, 16, 16);
+}
+
+.sbox {
+  position: fixed;
+}
+.stext {
+  width: 300px;
+  height: 50px;
+  background: rgb(32, 32, 32);
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #fff;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 30px;
+}
+.fa-search {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-left: 16px;
+  margin-top: 16px;
+  z-index: 1;
+  color: #fff;
+}
+.stext2 {
+  width: 250px;
+  height: 40px;
+  background: rgb(32, 32, 32);
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #fff;
+  float: left;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 30px;
+  text-align-last: center;
+}
+.light {
+  width: 200px;
+  height: 50px;
+  border-radius: 100px;
+  background: rgb(17, 16, 16);
+  color: #ffffff;
+}
+.light button {
+  width: 200px;
+  height: 50px;
+  border-radius: 100px;
+  font-size: 20px;
+  background: linear-gradient(45deg, #222222, #191186);
+  color: #ffffff;
+}
+.light2 {
+  width: 15px;
+  height: 40px;
+  border-radius: 100px;
+  float: left;
+  text-align-last: center;
+}
+.boxsss ul {
+  list-style: none;
+  padding-left: 0px;
+}
+.boxsss {
+  overflow-y: scroll;
+  width: 500;
+  height: 650px;
+  background-color: rgb(17, 16, 16);
+}
+.boxsss li:hover {
+  background-color: #222222;
+}
+.boxsss li:active {
+  background-color: #14142c;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(68, 68, 68);
+  color: rgba(97, 95, 95, 0);
+  border-radius: 5px;
+}
+.xbox {
+  width: 300px;
+  height: 50px;
+}
+.xbox2 {
+  width: 30px;
+  height: 50px;
+}
+
+.phim {
+  text-align: left;
+  position: fixed;
+  top: 15px;
+  left: 830px;
+  width: 1770px;
+  height: 1205px;
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(17, 16, 16);
+  font-size: 40px;
+  overflow-y: scroll;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  /*repeat(auto-fit, minmax(200px, 1fr)): Tạo ra các cột có chiều rộng tối thiểu là 200px và tối đa là 1fr (1 fraction unit). Các cột này sẽ được tự động xếp hàng ngang khi chiều rộng màn hình lớn hơn 1200px.*/
+  grid-template-rows: auto;
+  grid-column-gap: 40px;
+  grid-row-gap: 50px;
+}
+.down {
+  width: 1670px;
+  height: 900;
+  background-color: #414141;
+  color: #000;
+}
+.down button {
+  width: 500px;
+  height: 105px;
+  background-color: #414141;
+  border: none;
+}
+.down button:hover {
+  color: #ffffff7e;
+}
+.item {
+  background-color: #2319b698;
+  width: 200px;
+  height: 333px;
+  text-align: center;
+  font-size: 15px;
+  color: #22222200;
+}
+.item button {
+  background-color: #3838385e;
+  border: none;
+  font-size: 15px;
+  color: #ffffff8a;
+
+  width: 200px;
+  height: 150px;
+}
+.item button:hover {
+  color: #ffffffb4;
+  background-color: rgb(17, 16, 16);
+}
+/* Media queries */
+@media only screen and (max-width: 600px) {
+  /*Nếu chiều rộng màn hình nhỏ hơn 600px thì sẽ có 1 cột*/
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  /*Nếu chiều rộng màn hình lớn hơn 600px và nhỏ hơn 1200px thì sẽ có 2 cột*/
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  /*Nếu chiều rộng màn hình lớn hơn 1200px thì sẽ có 3 cột*/
+}
+
+@media only screen and (max-width: 1440px) {
+  .container {
+    grid-column-gap: 20px;
+    grid-row-gap: 25px;
+  }
+  .fixed {
+    width: 400px;
+    height: 120px;
+    font-size: 20px;
+    font-size: 20px;
+  }
+  .fixed2 {
+    width: 400px;
+    height: 645px;
+    font-size: 20px;
+    top: 150px;
+    font-size: 20px;
+  }
+  .phim {
+    width: 825px;
+    height: 780px;
+    font-size: 20px;
+    top: 15px;
+    font-size: 20px;
+    left: 430px;
+  }
+  .light {
+    width: 150px;
+    height: 25px;
+  }
+  .boxsss {
+    height: 400px;
+    width: 300px;
+  }
+  .line {
+    left: 430px;
+    width: 1;
+  }
+  .xbox {
+    width: 150px;
+    height: 25px;
+  }
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .item {
+    width: 150px;
+    height: 250px;
+  }
+  .item button {
+    font-size: 10px;
+    width: 150px;
+    height: 55px;
+  }
+  .light button {
+    width: 100px;
+    height: 25px;
+    font-size: 10px;
+  }
+  .light2 {
+    width: 5px;
+    height: 5px;
+  }
+  .down {
+    width: 750px;
+    height: 550px;
+  }
+  .down button {
+    width: 200px;
+    height: 50;
+    font-size: 15px;
+  }
+}
