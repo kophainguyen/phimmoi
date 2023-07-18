@@ -182,23 +182,7 @@ body {
   background-color: rgb(17, 16, 16);
 }
 /* Media queries */
-@media only screen and (max-width: 600px) {
-  /*Nếu chiều rộng màn hình nhỏ hơn 600px thì sẽ có 1 cột*/
-  .container {
-    grid-template-columns: 1fr;
-  }
-}
 
-@media only screen and (min-width: 601px) and (max-width: 1200px) {
-  /*Nếu chiều rộng màn hình lớn hơn 600px và nhỏ hơn 1200px thì sẽ có 2 cột*/
-  .container {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
-}
-
-@media only screen and (min-width: 1201px) {
-  /*Nếu chiều rộng màn hình lớn hơn 1200px thì sẽ có 3 cột*/
-}
 
 @media only screen and (max-width: 1440px) {
   .container {
