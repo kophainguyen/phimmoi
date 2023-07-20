@@ -184,7 +184,7 @@ body {
 /* Media queries */
 
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1280px) {
   .container {
     grid-column-gap: 20px;
     grid-row-gap: 25px;
@@ -219,7 +219,7 @@ body {
     width: 300px;
   }
   .line {
-    left: 430px;
+    left: 30px;
     width: 1;
   }
   .xbox {
