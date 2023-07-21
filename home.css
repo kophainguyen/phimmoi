@@ -17,10 +17,10 @@ body {
   position: fixed;
   left: 15px;
   width: 400px;
-  height: 645px;
+  height: 468px;
   font-size: 20px;
   top: 150px;
-  border-radius: 20px;
+  border-radius: 15px;
   color: white;
   background-color: rgb(17, 16, 16);
 }
@@ -96,7 +96,7 @@ body {
 .boxsss {
   overflow-y: scroll;
   width: 25;
-  height: 325px;
+  height: 295px;
   background-color: rgb(17, 16, 16);
 }
 .boxsss li:hover {
@@ -181,152 +181,5 @@ body {
   color: #ffffffb4;
   background-color: rgb(17, 16, 16);
 }
-/* Media queries */
-@media only screen and (max-width: 420px) {
-  .container {
-    grid-column-gap: 20px;
-    grid-row-gap: 25px;
-  }
-  .fixed {
-    width: 133px;
-    height: 40px;
-    font-size: 20px;
-    font-size: 20px;
-  }
-  .fixed2 {
-    width: 133px;
-    height: 215px;
-    font-size: 20px;
-    top: 150px;
-    font-size: 20px;
-  }
-  .phim {
-    width: 275px;
-    height: 260px;
-    font-size: 20px;
-    top: 15px;
-    font-size: 20px;
-    left: 430px;
-  }
-  .light {
-    width: 50px;
-    height: 8px;
-  }
-  .boxsss {
-    height: 133px;
-    width: 100px;
-  }
-  .line {
-    left: 10px;
-    width: 1;
-  }
-  .xbox {
-    width: 50px;
-    height: 25px;
-  }
-  .container {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  }
-  .item {
-    width: 15px;
-    height: 83px;
-  }
-  .item button {
-    font-size: 10px;
-    width: 50px;
-    height: 20px;
-  }
-  .light button {
-    width: 33px;
-    height: 8px;
-    font-size: 10px;
-  }
-  .light2 {
-    width: 5px;
-    height: 5px;
-  }
-  .down {
-    width: 250px;
-    height: 183px;
-  }
-  .down button {
-    width: 66px;
-    height: 18;
-    font-size: 15px;
-  }
-}
-
-@media only screen and (max-width: 1280px) {
-  .container {
-    grid-column-gap: 20px;
-    grid-row-gap: 25px;
-  }
-  .fixed {
-    width: 400px;
-    height: 120px;
-    font-size: 20px;
-    font-size: 20px;
-  }
-  .fixed2 {
-    width: 400px;
-    height: 645px;
-    font-size: 20px;
-    top: 150px;
-    font-size: 20px;
-  }
-  .phim {
-    width: 825px;
-    height: 780px;
-    font-size: 20px;
-    top: 15px;
-    font-size: 20px;
-    left: 430px;
-  }
-  .light {
-    width: 150px;
-    height: 25px;
-  }
-  .boxsss {
-    height: 400px;
-    width: 300px;
-  }
-  .line {
-    left: 30px;
-    width: 1;
-  }
-  .xbox {
-    width: 150px;
-    height: 25px;
-  }
-  .container {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-  .item {
-    width: 150px;
-    height: 250px;
-  }
-  .item button {
-    font-size: 10px;
-    width: 150px;
-    height: 55px;
-  }
-  .light button {
-    width: 100px;
-    height: 25px;
-    font-size: 10px;
-  }
-  .light2 {
-    width: 5px;
-    height: 5px;
-  }
-  .down {
-    width: 750px;
-    height: 550px;
-  }
-  .down button {
-    width: 200px;
-    height: 50;
-    font-size: 15px;
-  }
-}
+/* Media queries ko */
 
