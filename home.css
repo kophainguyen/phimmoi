@@ -3,23 +3,23 @@ body {
 }
 .fixed {
   position: fixed;
-  top: 15px;
-  left: 15px;
-  width: 400px;
-  height: 120px;
+  top: 1%;
+  left: 1%;
+  width: 30%;
+  height: 20%;
   border-radius: 20px;
-  font-size: 20px;
+  font-size: 100%;
   color: white;
 
   background-color: rgb(17, 16, 16);
 }
 .fixed2 {
   position: fixed;
-  left: 15px;
-  width: 400px;
-  height: 468px;
-  font-size: 20px;
-  top: 150px;
+  left: 1%;
+  width: 30%;
+  height: 76%;
+  font-size: 100%;
+  top: 22%;
   border-radius: 15px;
   color: white;
   background-color: rgb(17, 16, 16);
@@ -29,11 +29,11 @@ body {
   position: fixed;
 }
 .stext {
-  width: 250px;
-  height: 40px;
+  width: 50%;
+  height: 5%;
   background: rgb(32, 32, 32);
   border: none;
-  font-size: 10pt;
+  font-size: 100%;
   float: left;
   color: #fff;
   padding-left: 45px;
@@ -52,8 +52,8 @@ body {
   color: #fff;
 }
 .stext2 {
-  width: 125px;
-  height: 40px;
+  width: 55%;
+  height: 10%;
   background: rgb(32, 32, 32);
   border: none;
   font-size: 10pt;
@@ -68,23 +68,23 @@ body {
   text-align-last: center;
 }
 .light {
-  width: 100px;
-  height: 50px;
+  width: 30%;
+  height: 10%;
   border-radius: 100px;
   background: rgb(17, 16, 16);
   color: #ffffff;
 }
 .light button {
-  width: 100px;
-  height: 50px;
+  width: 100%;
+  height: 100%;
   border-radius: 100px;
-  font-size: 10px;
+  font-size: 100%;
   background: linear-gradient(45deg, #222222, #191186);
   color: #ffffff;
 }
 .light2 {
-  width: 15px;
-  height: 15px;
+  width: 5%;
+  height: 5%;
   border-radius: 100px;
   float: left;
   text-align-last: center;
@@ -95,8 +95,8 @@ body {
 }
 .boxsss {
   overflow-y: scroll;
-  width: 25;
-  height: 295px;
+  width: 100%;
+  height: 100%;
   background-color: rgb(17, 16, 16);
 }
 .boxsss li:hover {
@@ -105,7 +105,9 @@ body {
 .boxsss li:active {
   background-color: #14142c;
 }
-
+.boxsss li {
+  font-size: 100%;
+}
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -126,28 +128,28 @@ body {
 .phim {
   text-align: left;
   position: fixed;
-  top: 15px;
-  left: 430px;
-  width: 885px;
-  height: 600px;
+  top: 1%;
+  left: 32%;
+  width: 67%;
+  height: 98%;
   border-radius: 15px;
   color: rgb(255, 255, 255);
   background-color: rgb(17, 16, 16);
-  font-size: 40px;
+  font-size: 100%;
   overflow-y: scroll;
 }
 
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   /*repeat(auto-fit, minmax(200px, 1fr)): Tạo ra các cột có chiều rộng tối thiểu là 200px và tối đa là 1fr (1 fraction unit). Các cột này sẽ được tự động xếp hàng ngang khi chiều rộng màn hình lớn hơn 1200px.*/
   grid-template-rows: auto;
   grid-column-gap: 20px;
   grid-row-gap: 25px;
 }
 .down {
-  width: 835px;
-  height: 450;
+  width: 100%;
+  height: 35%;
   background-color: #414141;
   color: #000;
 }
@@ -171,15 +173,22 @@ body {
 .item button {
   background-color: #3838385e;
   border: none;
-  font-size: 15px;
+  font-size: 100%;
   color: #ffffff8a;
 
   width: 200px;
   height: 150px;
 }
 .item button:hover {
- color: #052feeb4;
+  color: #052feeb4;
   background-color: rgb(17, 16, 16);
 }
 /* Media queries ko */
+
+@media only screen and (min-width: 1025px) and (max-width: 130px) {
+  /*Nếu chiều rộng màn hình lớn hơn 600px và nhỏ hơn 1200px thì sẽ có 2 cột*/
+  .container {
+    grid-template-columns: repeat(300px, 2fr);
+  }
+}
 
