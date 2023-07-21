@@ -5,21 +5,22 @@ body {
   position: fixed;
   top: 15px;
   left: 15px;
-    width: 400px;
-    height: 120px;
-    font-size: 20px;
+  width: 800px;
+  height: 240px;
   border-radius: 20px;
+  font-size: 40px;
   color: white;
 
   background-color: rgb(17, 16, 16);
 }
 .fixed2 {
   position: fixed;
-   width: 400px;
-   height: 645px;
-  font-size: 20px;
-  top: 150px;
+  top: 270px;
+  left: 15px;
+  width: 800px;
+  height: 955px;
   border-radius: 20px;
+  font-size: 40px;
   color: white;
   background-color: rgb(17, 16, 16);
 }
@@ -67,23 +68,23 @@ body {
   text-align-last: center;
 }
 .light {
-    width: 150px;
-    height: 25px;
+  width: 200px;
+  height: 50px;
   border-radius: 100px;
   background: rgb(17, 16, 16);
   color: #ffffff;
 }
 .light button {
-    width: 100px;
-    height: 25px;
-    font-size: 10px;
+  width: 200px;
+  height: 50px;
   border-radius: 100px;
+  font-size: 20px;
   background: linear-gradient(45deg, #222222, #191186);
   color: #ffffff;
 }
 .light2 {
-    width: 5px;
-    height: 5px;
+  width: 15px;
+  height: 40px;
   border-radius: 100px;
   float: left;
   text-align-last: center;
@@ -94,8 +95,8 @@ body {
 }
 .boxsss {
   overflow-y: scroll;
-    height: 400px;
-    width: 300px;
+  width: 500;
+  height: 650px;
   background-color: rgb(17, 16, 16);
 }
 .boxsss li:hover {
@@ -114,8 +115,8 @@ body {
   border-radius: 5px;
 }
 .xbox {
-    width: 150px;
-    height: 25px;
+  width: 300px;
+  height: 50px;
 }
 .xbox2 {
   width: 30px;
@@ -125,14 +126,14 @@ body {
 .phim {
   text-align: left;
   position: fixed;
-    width: 825px;
-    height: 780px;
-    font-size: 20px;
-    top: 15px;
-    left: 430px;
+  top: 15px;
+  left: 830px;
+  width: 1770px;
+  height: 1205px;
   border-radius: 15px;
   color: rgb(255, 255, 255);
   background-color: rgb(17, 16, 16);
+  font-size: 40px;
   overflow-y: scroll;
 }
 
@@ -141,19 +142,18 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   /*repeat(auto-fit, minmax(200px, 1fr)): Tạo ra các cột có chiều rộng tối thiểu là 200px và tối đa là 1fr (1 fraction unit). Các cột này sẽ được tự động xếp hàng ngang khi chiều rộng màn hình lớn hơn 1200px.*/
   grid-template-rows: auto;
-    grid-column-gap: 20px;
-    grid-row-gap: 25px;
+  grid-column-gap: 40px;
+  grid-row-gap: 50px;
 }
 .down {
-    width: 750px;
-    height: 550px;
+  width: 1670px;
+  height: 900;
   background-color: #414141;
   color: #000;
 }
 .down button {
-   width: 200px;
-    height: 50;
-    font-size: 15px;
+  width: 500px;
+  height: 105px;
   background-color: #414141;
   border: none;
 }
@@ -162,9 +162,8 @@ body {
 }
 .item {
   background-color: #2319b698;
-    background-size: 150px 250px ;
-    width: 150px;
-    height: 250px;
+  width: 200px;
+  height: 333px;
   text-align: center;
   font-size: 15px;
   color: #22222200;
@@ -172,17 +171,90 @@ body {
 .item button {
   background-color: #3838385e;
   border: none;
-      font-size: 10px;
-    width: 150px;
-    height: 55px;
+  font-size: 15px;
   color: #ffffff8a;
+
+  width: 200px;
+  height: 150px;
 }
 .item button:hover {
   color: #ffffffb4;
   background-color: rgb(17, 16, 16);
 }
 /* Media queries */
-
+@media only screen and (max-width: 420px) {
+  .container {
+    grid-column-gap: 20px;
+    grid-row-gap: 25px;
+  }
+  .fixed {
+    width: 133px;
+    height: 40px;
+    font-size: 20px;
+    font-size: 20px;
+  }
+  .fixed2 {
+    width: 133px;
+    height: 215px;
+    font-size: 20px;
+    top: 150px;
+    font-size: 20px;
+  }
+  .phim {
+    width: 275px;
+    height: 260px;
+    font-size: 20px;
+    top: 15px;
+    font-size: 20px;
+    left: 430px;
+  }
+  .light {
+    width: 50px;
+    height: 8px;
+  }
+  .boxsss {
+    height: 133px;
+    width: 100px;
+  }
+  .line {
+    left: 10px;
+    width: 1;
+  }
+  .xbox {
+    width: 50px;
+    height: 25px;
+  }
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  .item {
+    width: 15px;
+    height: 83px;
+  }
+  .item button {
+    font-size: 10px;
+    width: 50px;
+    height: 20px;
+  }
+  .light button {
+    width: 33px;
+    height: 8px;
+    font-size: 10px;
+  }
+  .light2 {
+    width: 5px;
+    height: 5px;
+  }
+  .down {
+    width: 250px;
+    height: 183px;
+  }
+  .down button {
+    width: 66px;
+    height: 18;
+    font-size: 15px;
+  }
+}
 
 @media only screen and (max-width: 1280px) {
   .container {
@@ -200,6 +272,7 @@ body {
     height: 645px;
     font-size: 20px;
     top: 150px;
+    font-size: 20px;
   }
   .phim {
     width: 825px;
@@ -217,7 +290,10 @@ body {
     height: 400px;
     width: 300px;
   }
-
+  .line {
+    left: 30px;
+    width: 1;
+  }
   .xbox {
     width: 150px;
     height: 25px;
@@ -226,7 +302,6 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
   .item {
-    background-size: 150px 250px ;
     width: 150px;
     height: 250px;
   }
