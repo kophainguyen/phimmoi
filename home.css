@@ -178,7 +178,7 @@ body {
   height: 150px;
 }
 .item button:hover {
-  color: #ffffffb4;
+ color: #052feeb4;
   background-color: rgb(17, 16, 16);
 }
 /* Media queries ko */
